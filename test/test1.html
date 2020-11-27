@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Hello OpenCV.js</title>
+	</head>
+<body>
+	<h2>Hello OpenCV.js</h2>
+	<div>
+	  <div class="inputoutput">
+	    <div class="caption"> 
+			<input type="file" id="fileInput" name="file" />
+		</div>
+		<canvas id='canvas' width='400' height='400'>
+			Your browser doesn't supports HTML canvas.
+		</canvas>
+	  </div>
+	</div>
+	<script type="text/javascript">
+		let img =  new Image();
+		let input = document.getElementById("fileInput");
+		input.addEventListener("change", (e) => {
+		  img.src = URL.createObjectURL(e.target.files[0]);
+		  console.log(img.src);
+		  let canvas = document.getElementById('canvas');
+		  let context = canvas.getContext('2d');
+		  context.drawImage(img,0,0);
+		});
+	</script>
+	</body>
+</html>

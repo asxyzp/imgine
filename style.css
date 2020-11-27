@@ -1,0 +1,62 @@
+/*
+	NAME : style.css
+	FUNCTIONALITY : Provides styling to the web app
+	CREATED BY : Aashish Loknath Panigrahi (@asxyzp)
+*/
+
+/*Styling the main containers in the application*/
+#img-control{
+	background: black;
+	color:white;
+	height: 100vh;
+	overflow-y: scroll;
+	overflow-x: none;
+	display: flex;
+	flex-direction: column;
+}
+#img-load{
+	height: 100vh;
+	overflow:auto;
+	display: flex;
+	flex-direction: column;
+}
+
+/*Styles the text*/
+.imgine-text{
+	font-family: 'Pacifico', cursive;
+	font-weight: 900;
+}
+label{
+	width:100%;
+}
+.center{
+	text-align:center;
+}
+
+/*Styling the image buttons (file and load)*/
+.img-file-btn{
+	width:0.1px;
+	height:0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+label[for='img-file-btn']{
+	border-radius:7px; 
+	cursor: pointer;
+	background:white;
+	color: black;
+	padding:8px;
+	margin-top: 6px;
+	margin-bottom: -3px;
+}
+.img-load-btn{
+	margin-top:10px;
+	width:100%;
+}
+
+.canvas-div{
+	height:100vh;
+	overflow: scroll;
+}

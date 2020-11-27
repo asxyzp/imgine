@@ -1,0 +1,62 @@
+<!--
+	APP NAME : Imgine
+	Functionality : Interactive web-based digital image processing application
+	CREATED BY : Aashish Loknath Panigrahi (@asxyzp) 
+-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Imgine</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<link href='assets/Imgine.jpg' rel='icon'/>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">		
+	<link href='https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css' rel='stylesheet' type='text/css'/>
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+
+	<script src="https://kit.fontawesome.com/4d77ecffb7.js" crossorigin="anonymous"></script>
+	<script src='https://docs.opencv.org/3.4.0/opencv.js'></script>
+	<script src='https://code.jquery.com/jquery-3.3.1.min.js'></script>
+	<script src="script.js"></script>
+  </head>
+  <body>
+    <header>
+
+	</header>
+	<main>
+		<div class='container-fluid'>
+			<div class='row top-row'>
+				<div id='img-control' class='col-md-3'>
+					
+					<!--Logo-->
+					<h1 class='imgine-text center'>
+						<i class="fas fa-camera-retro"></i>
+						imgine
+					</h1>
+					
+					<!--Button to select an image-->
+					<label class='center' for='img-file-btn'>
+						<i class="fas fa-upload"></i>
+						Select an image
+					</label>
+					<input name='img-file-btn' id='img-file-btn' class='img-file-btn form-control' type='file'accept = "image/*"/>
+			
+					<!--Selecting input and output fram radio button and dislay it-->
+					<input type='radio'/>
+					<input type='radio'/>
+
+				</div>
+				<div id='img-load' class='col-md-9'>
+					<!--canvas where the image will be loaded-->
+					<div class='canvas-div'>
+          				<canvas id='imgCanvas'>This browser does not supports canvas.</canvas>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+	<footer></footer>
+  </body>
+</html>
