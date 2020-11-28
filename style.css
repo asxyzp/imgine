@@ -33,6 +33,7 @@ label{
 	text-align:center;
 }
 
+
 /*Styling the image buttons (file and load)*/
 .img-file-btn{
 	width:0.1px;
@@ -56,6 +57,26 @@ label[for='img-file-btn']{
 	width:100%;
 }
 
+/*Styling the containers*/
+.top{
+	margin-top: 10px;
+}
+.small-top{
+	margin-top: 5px;
+}
+.control-div{
+	display: block;
+	width:100%;
+	padding: 5px;
+	background: white;
+	border-radius: 7px;
+	color:black;
+}
+.full-width{
+	width:100%;
+}
+
+/*Styling the canvas container*/
 .canvas-div{
 	height:100vh;
 	overflow: scroll;
