@@ -39,28 +39,29 @@
 					<!--Button to select an image-->
 					<label class='center' for='img-file-btn'>
 						<i class="fas fa-upload"></i>
-						Select an image
+						Choose an image
 					</label>
 					<input name='img-file-btn' id='img-file-btn' class='img-file-btn form-control' type='file'accept = "image/*"/>
-			
+					
 					<!--Selecting input and output fram radio button and dislay it-->
-					<div class="btn-group btn-group-toggle top io-toggle" data-toggle="buttons">
-						
+					<div class="btn-group btn-group-toggle top io-toggle hide" data-toggle="buttons">
 						<label class='btn btn-primary input-label active' autocomplete="off" for="input">Input
 							<input type='radio' value="input" id="input" name="inputoutput" checked/>
 						</label>					
-						
 						<label class='btn btn-primary output-label' autocomplete="off" for="output">Output
 							<input type='radio' value="output" id="output" name="inputoutput"/>
 						</label>
 					</div>
 
-
-					<button class="btn btn-warning top revert"><i class="fas fa-undo"></i> Revert</button>
-
-					<button class='btn btn-secondary top greyscale'>Generate greyscale image</button>
+					<button class="btn btn-warning top revert hide">
+						<i class="fas fa-undo"></i> Revert output
+					</button>
 					
-					<button class='btn btn-primary thresholding top'><i class="fa fa-caret-down"></i> Thresholding</button>
+					<button class='btn btn-secondary top greyscale hide'>Greyscale</button>
+
+					<button class='btn btn-primary thresholding top hide'>
+						<i class="fa fa-caret-down"></i> Thresholding
+					</button>
 					<div class="control-div thresholding-div top">
 						<input type='number' class='thresholding-value form-control' placeholder="Enter threshold value (0-255)" min='0' max='255'/>
 						<select class='thresholding-option form-control small-top' id='thresholding-option' name='thresholding-option''>
@@ -73,7 +74,9 @@
 						</select>
 						<button class="btn btn-success small-top full-width threshold-btn" disabled>Do thresholding!</button>
 					</div>
+
 				</div>
+				
 				<div id='img-load' class='col-md-9'>
 					<!--input canvas where the image will be loaded-->
 					<div class='canvas-div input-canvas-div'>

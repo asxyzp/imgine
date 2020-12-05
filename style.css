@@ -6,8 +6,8 @@
 
 /*Styling the main containers in the application*/
 #img-control{
-	background: black;
-	color:white;
+	background: #EDF5E1;
+	color:black;
 	height: 100vh;
 	overflow-y: scroll;
 	overflow-x: none;
@@ -42,19 +42,21 @@ label{
 	overflow: hidden;
 	position: absolute;
 	z-index: -1;
+	width:100%;
 }
 label[for='img-file-btn']{
 	border-radius:7px; 
 	cursor: pointer;
-	background:white;
-	color: black;
+	background:black;
+	color: white;
 	padding:8px;
 	margin-top: 6px;
 	margin-bottom: -3px;
+	width:100%;
 }
 .img-load-btn{
-	margin-top:10px;
 	width:100%;
+	margin-top:10px;
 }
 
 /*Styling the containers*/
@@ -80,4 +82,14 @@ label[for='img-file-btn']{
 .canvas-div{
 	height:100vh;
 	overflow: scroll;
+}
+
+.io-toggle{
+	width:100%;
+}
+.btn{
+	width:100%;
+}
+.pad2{
+	padding: 2px;
 }

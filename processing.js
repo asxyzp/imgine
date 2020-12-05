@@ -3,22 +3,15 @@
 
 $(document).ready(()=>{
 
-	//For hiding buttons and containers before the image is loaded
-	$('.io-toggle').hide();
-	$('.greyscale').hide();
+	$('.hide').hide();
 	$('.output-canvas-div').hide();
-	$('.thresholding').hide();
 	$('.thresholding-div').hide();
-	$('.revert').hide();
 
 	$('.img-file-btn').on('change',(event)=>{
 
 		//For showing buttons and containers after the image is loaded
-		$('.io-toggle').show();
-		$('.greyscale').show();
-		$('.thresholding').show();
-		$('.revert').show();
-
+		$('.hide').show();
+		
 		//Toggling threshold div based on thresholding button
 		$('.thresholding').click(()=>{
 			$('.thresholding-div').toggle();
