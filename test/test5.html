@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>TEST 5 : Understanding JS selectors</title>
+		<script>
+			$(document).ready(()=>{
+
+				//ID selector
+				let selector1 = document.getElementById('hello');
+				console.log(selector1);
+
+				//Class selector
+				let selector2 = document.querySelectorAll('.hello');
+				console.log(selector2);
+				console.log(selector2["0"]);
+				console.log(selector2["1"]);
+			});
+		</script>
+	</head>
+	<body>
+		<h1 id="hello">Hello</h1>
+		<h2 class="hello">Hello</h2>
+		<h3 class="hello">Hello</h3>
+	</body>
+</html>
